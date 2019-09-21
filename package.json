@@ -1,0 +1,30 @@
+{
+  "name": "taskeasy_1",
+  "version": "1.0.0",
+  "description": "TaskEasy Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon -w src -x \"babel-node src --presets @babel/env\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-cli": "^7.0.0-0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2",
+    "superagent": "^5.1.0",
+    "supertest": "^4.0.2"
+  }
+}
