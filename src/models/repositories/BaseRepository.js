@@ -5,4 +5,12 @@ export default class BaseRepository {
     this.model = model
   }
 
+  findById(id) {
+    return this.model.findById(id)
+  }
+
+  list() {
+    return this.model.list()
+  }
+
 }
