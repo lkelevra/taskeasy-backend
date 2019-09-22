@@ -1,551 +1,560 @@
 const DB = {
-  UserDisponibility:[
-  {
-    hour: "7AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
+  UserById: [{
+    id: 1,
+    nombre: "Kyle",
+    meetings: [
+      { id: 1, hour: "13:30AM" },
+      { id: 2, hour: "14:30PM" },
+      { id: 13, hour: "18PM" }
     ]
-  },
-  {
-    hour: "7:30AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "8AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      }
-    ]
-  },
-  {
-    hour: "8:30AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "9AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "9:30AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "10AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "10:30AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "11AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "11:30AM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "12PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "12:30PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      }
-    ]
-  },
-  {
-    hour: "13PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "13:30PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      }
-    ]
-  },
-  {
-    hour: "14PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "14:30PM",
-    users: [
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "15PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "15:30PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      }
-    ]
-  },
-  {
-    hour: "16PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "16:30PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  },
-  {
-    hour: "17PM",
-    users: [
-      {
-        id: 1,
-        name: "Kyle"
-      },
-      {
-        id: 2,
-        name: "Paul"
-      },
-      {
-        id: 3,
-        name: "Alex"
-      },
-      {
-        id: 4,
-        name: "Luis"
-      },
-      {
-        id: 5,
-        name: "Jairo"
-      },
-      {
-        id: 6,
-        name: "Sonya"
-      }
-    ]
-  }
-],
+  }],
+  UserDisponibility: [
+    {
+      hour: "7AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "7:30AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "8AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        }
+      ]
+    },
+    {
+      hour: "8:30AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "9AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "9:30AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "10AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "10:30AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "11AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "11:30AM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "12PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "12:30PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        }
+      ]
+    },
+    {
+      hour: "13PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "13:30PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        }
+      ]
+    },
+    {
+      hour: "14PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "14:30PM",
+      users: [
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "15PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "15:30PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        }
+      ]
+    },
+    {
+      hour: "16PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "16:30PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    },
+    {
+      hour: "17PM",
+      users: [
+        {
+          id: 1,
+          name: "Kyle"
+        },
+        {
+          id: 2,
+          name: "Paul"
+        },
+        {
+          id: 3,
+          name: "Alex"
+        },
+        {
+          id: 4,
+          name: "Luis"
+        },
+        {
+          id: 5,
+          name: "Jairo"
+        },
+        {
+          id: 6,
+          name: "Sonya"
+        }
+      ]
+    }
+  ],
 
   UserDB: [
     {
